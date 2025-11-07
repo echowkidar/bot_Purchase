@@ -9,7 +9,7 @@ const wppconnect = require('@wppconnect-team/wppconnect');
 // const fs = require('fs');
 
 const app = express();
-const port = process.env.PORT || 3002; // Use environment port or default to 3002
+const port = process.env.PORT || 3003; // Use environment port or default to 3003
 
 // Middleware
 app.use(cors()); // Enable CORS for frontend communication
@@ -44,8 +44,8 @@ app.use(express.json()); // Parse JSON request bodies
 // end
 //multiple urls start
 const N8N_WEBHOOK_URLS = [
-    process.env.N8N_WEBHOOK_URL_1 || 'https://agent.echowkidar.in/webhook-test/e77397ab-fe1b-407b-9afe-77edab1dd92d',
-    process.env.N8N_WEBHOOK_URL_2 || 'https://agent.echowkidar.in/webhook/e77397ab-fe1b-407b-9afe-77edab1dd92d'
+    process.env.N8N_WEBHOOK_URL_1 || 'https://agent.echowkidar.in/webhook-test/54fc2f53-abe1-4b93-a7cf-7e0236933fe4',
+    process.env.N8N_WEBHOOK_URL_2 || 'https://agent.echowkidar.in/webhook/54fc2f53-abe1-4b93-a7cf-7e0236933fe4'
 ];
 
 console.log('Webhook URLs configured:', N8N_WEBHOOK_URLS);
