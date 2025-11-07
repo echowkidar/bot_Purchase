@@ -14,7 +14,7 @@ services:
 
   frontend:
     build: ./frontend
-    container_name: wppconnect-frontend
+    container_name: Purchase-Office-wppconnect-frontend
     ports:
       - "3011:80"
     restart: unless-stopped
