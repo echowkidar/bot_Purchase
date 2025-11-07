@@ -3,9 +3,9 @@ services:
   backend:
     build:
       context: ./backend
-    container_name: wppconnect-backend
+    container_name: Purchase-Office-wppconnect-backend
     ports:
-      - "3002:3002"
+      - "3003:3003"
     environment:
       - PUPPETEER_CHROMIUM_ARGS=--no-sandbox
       - GENERIC_TIMEZONE=Asia/Kolkata
@@ -16,5 +16,5 @@ services:
     build: ./frontend
     container_name: wppconnect-frontend
     ports:
-      - "3010:80"
+      - "3011:80"
     restart: unless-stopped
